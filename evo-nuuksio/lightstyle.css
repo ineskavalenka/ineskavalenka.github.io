@@ -15,13 +15,13 @@
 .img0 {
   text-align: center;
   display: block;
-  /*
-  margin-left: auto;
-  margin-right: auto;
-  */
+  padding: 4%;
+}
 
+img
+{
   max-width: 100%;
   width: 90%;
   height: auto;
-  padding: 4%;
+
 }
