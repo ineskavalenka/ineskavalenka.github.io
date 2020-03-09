@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="studyrec.css">
+</head>
+<body onLoad="translate('en', 'ru');">
+
+<script>
+translate('en', 'ru');
+
+function translate(langtoshow, langtohide)
+{
+	var divsToHide = document.getElementsByClassName(langtohide);
+    for(var i = 0; i < divsToHide.length; i++){
+       // divsToHide[i].style.visibility = "hidden"; // or
+        divsToHide[i].style.display = "none"; // depending on what you're doing
+    }
+
+    var divsToShow = document.getElementsByClassName(langtoshow);
+    for(var j = 0; j < divsToShow.length; j++){
+        divsToShow[j].style.display = "block";
+    }
+    return false;
+}
+
+function getexam(lang)
+{ if(lang == "ru") return "экзамен/зачет"
+    else return "exam";
+}
+
+function getsubject(lang)
+{ if(lang == "ru") return "предмет"
+    else return "subject";
+}
+
+</script>
+
+
+<div id = "main">
+
+  <div id = "tohome">
+    <a href="../index.html">back</a>
+  </div>
+
+  <div id = "enru">
+
+      <a href="#en" onclick="translate('en', 'ru')">EN</a> |
+      <a href="#ru" onclick="translate('ru', 'en')">RU</a>
+  </div>
+<br>
+
+<!--
+  <tr> <td> <p class="en"> subject </p> <p class="ru"> контент </p> </td> <td> mark </td> </tr>
+-->
+
+<!--
+## STUDY RECORD 
+      
+<h3> BACHELORS </h3>
+<h3> Speciality: Computer Security(radio physical methods,  software and hardware means) </h3>
+<h3> Qualification: Specialist in Information Security. Radio physicist. </h3>   
+<h3> GPA: 7.2 (out of 10) </h3> 
+<h1> BSc </h1>
+-->  
+
+
+
+<div class = "year">
+  <h2> <p class="en"> 1st year </p> <p class="ru"> 1 курс </p></h2>
+  <h3> <p class="en"> winter term </p> <p class="ru"> зимняя сессия </p> </h3>
+    <table id="1winter" class="termtable">
+      <col width="auto">
+      <col width="80">
+      <tr> 
+        <th> <p class="en"> Subject </p> <p class="ru"> Предмет </p> </th>    
+        <th> <p class="en"> Exam </p> <p class="ru"> Оценка </p> </th>
+      </tr>
+      <tr> <td> <p class="en"> Programming </p> <p class="ru"> Программирование </p> </td> <td> 6 </td> </tr> 
+      <tr> <td> <p class="en"> Analytical Geometry and Higher Algebra </p> <p class="ru"> Аналитическая геометрия и линейная алгебра </p> </td> <td> 6 </td> </tr>
+      <tr> <td> <p class="en"> Mathematical analysis </p> <p class="ru"> Математический анализ </p> </td> <td> 5 </td> </tr>
+      <tr> <td> <p class="en"> General and Theoretical Physics </p> <p class="ru"> Общая физика </p> </td> <td> 8 </td> </tr>
+      <tr> <td> <p class="en"> English </p> <p class="ru"> Иностранный язык </p> </td> <td> + </td> </tr>
+      <tr> <td> <p class="en"> History </p> <p class="ru"> Интегрированный модуль "История" </p> </td> <td> + </td> </tr>
+      <tr> <td> <p class="en"> Political Science </p> <p class="ru"> Интегрированный модуль "Политология" </p> </td> <td> + </td> </tr>
+      <tr> <td> <p class="en"> Physical Culture (Sports) </p> <p class="ru"> Физическая культура </p> </td> <td> + </td> </tr>
+    </table>
+
+  <h3> <p class="en"> spring term </p> <p class="ru"> весенняя сессия </p> </h3>
+    <table id="1spring" class="termtable">
+    <col width="auto">
+    <col width="80">
+    <tr> 
+      <th> <p class="en"> Subject </p> <p class="ru"> Предмет </p> </th>    
+      <th> <p class="en"> Exam </p> <p class="ru"> Оценка </p> </th>
+    </tr>
+    <tr> <td> <p class="en"> Analytical Geometry and Higher Algebra  </p> <p class="ru"> Аналитическая геометрия и линейная алгебра </p> </td> <td> 7 </td> </tr>
+    <tr> <td> <p class="en"> English </p> <p class="ru"> Иностранный язык </p> </td> <td> 7 </td> </tr>
+    <tr> <td> <p class="en"> Programming </p> <p class="ru"> Программирование </p> </td> <td> 6 </td> </tr>
+    <tr> <td> <p class="en"> Mathematical analysis </p> <p class="ru"> Математический анализ </p> </td> <td> 4 </td> </tr>
+    <tr> <td> <p class="en"> General and Theoretical Physics </p> <p class="ru"> Общая физика </p> </td> <td> 6 </td> </tr>
+    <tr> <td> <p class="en"> Belarusian language </p> <p class="ru"> Белорусский язык (профессиональная лексика) </p> </td> <td> + </td> </tr>
+    <tr> <td> <p class="en"> Public policy and management </p> <p class="ru"> Спец. модуль "Государственная политика и управление" </p> </td> <td> + </td> </tr>
+    <tr> <td> <p class="en"> Training practice (computations) </p> <p class="ru"> Учебная практика (вычислительная) </p> </td> <td> + </td> </tr>
+    <tr> <td> <p class="en"> Physical Culture (Sports) </p> <p class="ru"> Физическая культура </p> </td> <td> + </td> </tr>
+    </table>
+
+</div>
+
+
+<div>
+  <h2> <p class="en"> 2nd year </p> <p class="ru"> 2 курс </p></h2>
+  <h3> <p class="en"> winter term </p> <p class="ru"> зимняя сессия </p> </h3>
+  <table id="2winter" class="termtable">
+    <col width="auto">
+    <col width="80">
+    <tr> 
+      <th> <p class="en"> Subject </p> <p class="ru"> Предмет </p> </th>    
+      <th> <p class="en"> Exam </p> <p class="ru"> Оценка </p> </th>
+    </tr>
+    <tr> <td> <p class="en"> Mathematical analysis </p> <p class="ru"> Математический анализ </p> </td> <td> 7 </td> </tr>
+    <tr> <td> <p class="en"> General and Theoretical Physics </p> <p class="ru"> Общая физика </p> </td> <td> 7 </td> </tr>
+    <tr> <td> <p class="en"> Numerical Methods </p> <p class="ru"> Численные методы </p> </td> <td> 5 </td> </tr>
+    <tr> <td> <p class="en"> Differential equations </p> <p class="ru"> Дифференциальные уравнения </p> </td> <td> 4 </td> </tr>
+    <tr> <td> <p class="en"> Theory of Probability and Elements of Statistics </p> <p class="ru"> Теория вероятностей и математическая статистика </p> </td> <td> 6 </td> </tr>
+    <tr> <td> <p class="en"> Imitational and Statistical Simulation </p> <p class="ru"> Имитационное и статистическое моделирование </p> </td> <td> + </td> </tr>
+    <tr> <td> <p class="en"> Applied Programming </p> <p class="ru"> Прикладное программирование </p> </td> <td> + </td> </tr>
+    <tr> <td> <p class="en"> Physical Culture (Sports) </p> <p class="ru"> Физическая культура </p> </td> <td> + </td> </tr>
+  </table>
+
+  <h3> <p class="en"> spring term </p> <p class="ru"> весенняя сессия </p> </h3>
+  <table id="2spring" class="termtable">
+    <col width="auto">
+    <col width="80">
+    <tr> 
+        <th> <p class="en"> Subject </p> <p class="ru"> Предмет </p> </th>    
+        <th> <p class="en"> Exam </p> <p class="ru"> Оценка </p> </th>
+    </tr>
+    <tr> <td> <p class="en"> General and Theoretical </p> <p class="ru"> Physics Общая физика </p> </td> <td> 7 </td> </tr>
+    <tr> <td> <p class="en"> Fundamentals of Electronics </p> <p class="ru"> Основы радиоэлектроники </p> </td> <td> 8 </td> </tr>
+    <tr> <td> <p class="en"> Philosophy Интегрированный модуль </p> <p class="ru"> "Философия" </p> </td> <td> 9 </td> </tr>
+    <tr> <td> <p class="en"> Economics Интегрированный модуль </p> <p class="ru"> "Экономика" </p> </td> <td> 7 </td> </tr>
+    <tr> <td> <p class="en"> Operations Research </p> <p class="ru"> Исследование операций </p> </td> <td> 9 </td> </tr>
+    <tr> <td> <p class="en"> Human life safety </p> <p class="ru"> Безопасность жизнедеятельности человека </p> </td> <td> + </td> </tr>
+    <tr> <td> <p class="en"> Applied Programming </p> <p class="ru"> Прикладное программирование </p> </td> <td> + </td> </tr>
+    <tr> <td> <p class="en"> Training practice (radioelectronics) </p> <p class="ru"> Учебная практика (по радиоэлектронике) </p> </td> <td> + </td> </tr>   
+    <tr> <td> <p class="en"> Physical Culture (Sports) </p> <p class="ru"> Физическая культура </p> </td> <td> + </td> </tr>
+  </table>
+</div>
+
+
+<div>
+  <h2> <p class="en"> 3rd year </p> <p class="ru"> 3 курс </p></h2>
+  <h3> <p class="en"> winter term </p> <p class="ru"> зимняя сессия </p> </h3>
+  <table id="3winter" class="termtable">
+    <col width="auto">
+    <col width="80">
+    <tr> 
+      <th> <p class="en"> Subject </p> <p class="ru"> Предмет </p> </th>    
+      <th> <p class="en"> Exam </p> <p class="ru"> Оценка </p> </th>
+    </tr>
+    <tr> <td> <p class="en"> General and Theoretical Physics </p> <p class="ru"> Общая физика </p> </td> <td> 6 </td> </tr>
+    <tr> <td> <p class="en"> Integrated Circuits </p> <p class="ru"> Интегральная электроника </p> </td> <td> 9 </td> </tr>
+    <tr> <td> <p class="en"> Methods of Mathematical Physics </p> <p class="ru"> Методы математической физики </p> </td> <td> 4 </td> </tr> 
+    <tr> <td> <p class="en"> Microprocessors and computer hardware </p> <p class="ru"> Микропроцессоры и аппаратные средства вычислительной техники </p> </td> <td> 8 </td> </tr> 
+    <tr> <td> <p class="en"> Applied Programming </p> <p class="ru"> Технологии программирования </p> </td> <td> 8 </td> </tr>
+    <tr> <td> <p class="en"> Networks </p> <p class="ru"> Компьютерные сети </p> </td> <td> + </td> </tr>
+    <tr> <td> <p class="en"> Operating Systems </p> <p class="ru"> Операционные системы </p> </td> <td> + </td> </tr>
+    <tr> <td> <p class="en"> Fundamentals of Information Security </p> <p class="ru"> Основы информационной безопасности </p> </td> <td> + </td> </tr>
+    <tr> <td> <p class="en"> Fundamentals of Entrepreneurship and Business </p> <p class="ru"> Спец. модуль "Основы предпринимательства и бизнеса" </p> </td> <td> + </td> </tr>
+    <tr> <td> <p class="en"> Physical Culture (Sports) </p> <p class="ru"> Физическая культура </p> </td> <td> + </td> </tr>
+  </table>
+
+  <h3> <p class="en"> spring term </p> <p class="ru"> весенняя сессия </p> </h3>
+  <table id="3spring" class="termtable">
+    <col width="auto">
+    <col width="80">
+    <tr> 
+      <th> <p class="en"> Subject </p> <p class="ru"> Предмет </p> </th>    
+      <th> <p class="en"> Exam </p> <p class="ru"> Оценка </p> </th>
+    </tr>
+  <tr> <td> <p class="en"> Discrete mathematics and mathematical logic </p> <p class="ru"> Дискретная математика и математическая логика </p> </td> <td> 6 </td> </tr>
+  <tr> <td> <p class="en"> Course work </p> <p class="ru"> Курсовая работа </p> </td> <td> 9 </td> </tr>
+  <tr> <td> <p class="en"> Communication systems and information transmission networks </p> <p class="ru"> Системы связи и сети передачи информации </p> </td> <td> 9 </td> </tr>
+  <tr> <td> <p class="en"> Theory of Information </p> <p class="ru"> Теория информации </p> </td> <td> 9 </td> </tr>
+  <tr> <td> <p class="en"> Statistical Radiophysics </p> <p class="ru"> Статистическая радиофизика </p> </td> <td> 9 </td> </tr>
+  <tr> <td> <p class="en"> Computer Aided Design in Electronics </p> <p class="ru"> Автоматизированное проектирование в электронике </p> </td> <td> + </td> </tr>
+  <tr> <td> <p class="en"> Data Mining </p> <p class="ru"> Интеллектуальный анализ данных </p> </td> <td> + </td> </tr>
+  <tr> <td> <p class="en"> Cryptography </p> <p class="ru"> Криптографические методы </p> </td> <td> + </td> </tr>
+  <tr> <td> <p class="en"> Physical Culture (Sports) </p> <p class="ru"> Физическая культура </p> </td> <td> + </td> </tr>
+  <tr> <td> <p class="en"> Electronic sensors and signal amplifiers </p> <p class="ru"> Электронные датчики и усилители сигналов </p> </td> <td> + </td> </tr>
+  </table>
+</div>
+
+<div>
+  <h2> <p class="en"> 4th year </p> <p class="ru"> 4 курс </p></h2>
+  <h3> <p class="en"> winter term </p> <p class="ru"> зимняя сессия </p> </h3>
+  <table id="4winter" class="termtable">
+    <col width="auto">
+    <col width="80">
+    <tr> 
+      <th> <p class="en"> Subject </p> <p class="ru"> Предмет </p> </th>    
+      <th> <p class="en"> Exam </p> <p class="ru"> Оценка </p> </th>
+    </tr>
+    <tr> <td> <p class="en"> Course work </p> <p class="ru"> Курсовая работа </p> </td> <td> 9 </td> </tr>
+    <tr> <td> <p class="en"> Quantum radiophysics and optoelectronics </p> <p class="ru"> Квантовая радиофизика и оптоэлектроника </p> </td> <td> 5 </td> </tr>
+    <tr> <td> <p class="en"> Applied Electrodynamics </p> <p class="ru"> Прикладная электродинамика </p> </td> <td> 5 </td> </tr>
+    <tr> <td> <p class="en"> Technical systems and methods of information security </p> <p class="ru"> Технические системы и методы защиты информации </p> </td> <td> 8 </td> </tr>
+    <tr> <td> <p class="en"> Digital Signal Processing </p> <p class="ru"> Цифровая обработка сигналов </p> </td> <td> 7 </td> </tr>
+    <tr> <td> <p class="en"> Data Transfer Interfaces </p> <p class="ru"> Интерфейсы передачи данных </p> </td> <td> + </td> </tr>
+    <tr> <td> <p class="en"> Data models and databases, RDBMS </p> <p class="ru"> Модели данных и системы управления базами данных </p> </td> <td> + </td> </tr>
+    <tr> <td> <p class="en"> Programmable Electronics </p> <p class="ru"> Программируемая электроника </p> </td> <td> + </td> </tr>
+    <tr> <td> <p class="en"> Software and hardware means of information security </p> <p class="ru"> Программно-аппаратные средства обеспечения информационной безопасности </p> </td> <td> + </td> </tr>   
+  </table>
+
+  <h3> <p class="en"> spring term </p> <p class="ru"> весенняя сессия </p> </h3>
+  <table id="4spring" class="termtable">
+    <col width="auto">
+    <col width="80">
+    <tr> 
+      <th> <p class="en"> Subject </p> <p class="ru"> Предмет </p> </th>    
+      <th> <p class="en"> Exam </p> <p class="ru"> Оценка </p> </th>
+    </tr>
+    <tr> <td> <p class="en"> State exam </p> <p class="ru"> Государственный экзамен </p> </td> <td> 9 </td> </tr>
+    <tr> <td> <p class="en"> Parallel Computations </p> <p class="ru"> Параллельные вычисления и программирование </p> </td> <td> 9 </td> </tr>
+    <tr> <td> <p class="en"> Software and hardware means of information security </p> <p class="ru"> Программно-аппаратные средства обеспечения информационной безопасности </p> </td> <td> 9 </td> </tr>
+    <tr> <td> <p class="en"> Internship </p> <p class="ru"> Производственно-преддипломная практика </p> </td> <td> 10 </td> </tr>
+    <tr> <td> <p class="en"> Computer simulation of electrodynamic processes and systems </p> <p class="ru"> Компьютерное моделирование электродинамических процессов и систем </p> </td> <td> + </td> </tr>
+    <tr> <td> <p class="en"> Identification, Access and Surveillance Systems </p> <p class="ru"> Системы идентификации, доступа и наблюдения </p> </td> <td> + </td> </tr>
+  </table>
+</div>
+
+	<p>
+      <a href="../index.html">Back</a>
+    </p>
+
+</div>
+
+</body>
+</html>

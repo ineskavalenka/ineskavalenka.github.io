@@ -1,0 +1,42 @@
+
+/* https://www.colorhexa.com/6f4e37 */
+
+body {
+	background-color: #130d0a;
+}
+
+
+#main
+{
+	background-color: #130d0a;
+  	margin-left: 20%;
+  	margin-right: 20%;
+}
+
+.post
+{
+	background-color: #918177;
+	padding-top :10px;
+	padding-bottom :10px;
+	margin-top : 5px;
+}
+
+h1, h2
+{
+	font-family: "Courier", "Courier New", monospace;
+	padding-left: 10%;
+  	padding-right: 10%;
+  	padding-top : 10px;
+	padding-bottom :10px;
+/*	border-bottom: 1px solid black;*/
+}
+
+p
+{
+	font-family: "Courier", "Courier New", monospace;
+	padding-left: 10%;
+  	padding-right: 10%;
+  	padding-top : 5px;
+	padding-bottom :5px;
+
+}
