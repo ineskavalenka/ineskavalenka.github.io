@@ -28,10 +28,23 @@ body {
   	padding-top :10px;
 	  padding-bottom :10px;
 
-  	margin-left: 20%;
-  	margin-right: 20%;
-
 }
+
+@media only screen and (min-width: 500px) {
+  img { padding: 10px; }
+  #main
+  {
+      margin-left: 20%;
+      margin-right: 20%;
+  }
+
+  p, h1, h2, img
+  {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
 
 h1
 {
@@ -43,10 +56,6 @@ p, h1, h2, img
 {
     padding-top :5px;
     padding-bottom :5px;
-
-    margin-left: 10%;
-    margin-right: 10%;
-
 }
 
 img
