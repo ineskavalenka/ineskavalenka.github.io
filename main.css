@@ -49,6 +49,11 @@ p, h1, h2, img
 
 }
 
+img
+{
+  width: 80%;
+  height: auto;
+}
 
 #page-container {
   position: relative;
